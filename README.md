@@ -1,59 +1,49 @@
-# AngularBlogDio
+# Angular Blog Project - Decola Tech Avanade 2025
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This project was developed as part of the Decola Tech Avanade 2025 bootcamp, focusing on learning Angular fundamentals and modern web development practices.
 
-## Development server
+## About the Project
 
-To start a local development server, run:
+A responsive blog built with Angular, featuring:
+- Modern and clean UI design
+- Responsive layout for all devices
+- Component-based architecture
+- Dynamic routing
+- Interactive card components
+- Engaging content about cats and programming
 
-```bash
-ng serve
-```
+## Technologies Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 17
+- TypeScript
+- HTML5
+- CSS3
+- Git
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Menu navigation
+- Featured article card
+- Small article cards
+- Detailed article view
+- Responsive design
+- Interactive elements
 
-```bash
-ng generate component component-name
-```
+## Development Learning Points
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Angular component creation and management
+- Routing and navigation
+- Data binding and component communication
+- Responsive design implementation
+- TypeScript usage in Angular applications
 
-```bash
-ng generate --help
-```
+## How to Run
 
-## Building
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `ng serve`
+4. Navigate to `http://localhost:4200/`
 
-To build the project run:
+## Acknowledgments
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project was created as part of the Decola Tech Avanade 2025 program, providing hands-on experience with Angular development and modern web technologies.

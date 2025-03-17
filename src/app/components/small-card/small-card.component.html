@@ -1,0 +1,35 @@
+<div class="small-card">
+  <div class="small-card__photo">
+    <img 
+      [src]="photoCover"
+      [alt]="cardTitle"
+      height="100px"
+    >
+  </div>
+
+  <div class="small-card__content">
+    <div class="small-card__title">
+      <h3>
+        <a routerLink="/content" [queryParams]="{
+          photo: photoCover,
+          title: cardTitle,
+          description: cardDescription
+        }">{{ cardTitle }}</a>
+      </h3>
+    </div>
+
+    <div class="small-card__description">
+      <p>
+        {{ cardDescription }}
+      </p>
+    </div>
+
+    <a routerLink="/content" [queryParams]="{
+      photo: photoCover,
+      title: cardTitle,
+      description: cardDescription
+    }">
+      <button class="read-more">Leia mais</button>
+    </a>
+  </div>
+</div>

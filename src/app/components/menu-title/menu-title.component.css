@@ -1,0 +1,40 @@
+.menu-title-container {
+    color: white;
+    margin: 15px 0;
+}
+
+.menu-title-container h1 {
+    margin: 15px 0;
+    font-size: 130px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.menu-title-container hr {
+    margin: 20px auto;
+    width: 80%;
+    height: 2px;
+    background-color: #292929;
+    border: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-title-container h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-title-container h1 {
+        font-size: 50px;
+    }
+
+    .menu-title-container hr {
+        width: 90%;
+    }
+}

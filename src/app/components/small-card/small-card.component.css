@@ -1,0 +1,121 @@
+.small-card {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    transition: transform 0.3s ease;
+}
+
+.small-card:hover {
+    transform: translateY(-5px);
+}
+
+.small-card__photo {
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.small-card__photo img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.small-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0; /* Evita overflow em telas pequenas */
+}
+
+.small-card__title h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.small-card__title a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.small-card__title a:hover {
+    color: #c4c4c4;
+}
+
+.small-card__description {
+    color: #c4c4c4;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.small-card__content > a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.read-more {
+    background-color: transparent;
+    border: 2px solid #c4c4c4;
+    color: #c4c4c4;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #c4c4c4;
+    color: #1f1f1f;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .small-card {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .small-card__photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .small-card__photo img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .small-card__title h3 {
+        font-size: 18px;
+    }
+
+    .small-card__description {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
+
+    .small-card__content > a {
+        display: block;
+        width: 100%;
+    }
+
+    .read-more {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,101 @@
+.big-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+}
+
+.big-card__photo {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.big-card__photo img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.big-card__title {
+    margin: 15px 0;
+}
+
+.big-card__title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.big-card__title a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.big-card__title a:hover {
+    color: #c4c4c4;
+}
+
+.big-card__description {
+    color: #c4c4c4;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.big-card a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.read-more {
+    background-color: transparent;
+    border: 2px solid #c4c4c4;
+    color: #c4c4c4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 150px;
+}
+
+.read-more:hover {
+    background-color: #c4c4c4;
+    color: #1f1f1f;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .big-card {
+        padding: 15px;
+    }
+
+    .big-card__title h2 {
+        font-size: 24px;
+    }
+
+    .big-card__description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .big-card__title h2 {
+        font-size: 20px;
+    }
+
+    .big-card__photo img {
+        max-height: 200px;
+    }
+
+    .read-more {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
